@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JQuery 01</title>
+    <!--file untuk online tanpa dwnld jquery <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>-->
+</head>
+<body>
+    
+    <h3>Judul</h3>
+    <div id="tampil1">Isi dari Tampil 1</div>
+    <div class="tampil1">Isi dari class Tampil 1</div>
+
+    <p>Isi Paragraph</p>
+    <div id="tampil">Paragraf ini tidak ada apa-apanya :) </div>
+    <div class="tampil">Di dalam class menjelaskan ketidakadaan dalam paragraf</div>
+
+
+
+    <script src="jquery-3.7.0.min.js"></script>
+    <script>
+        //document.getElementById("tampil").innerHTML = "Teks Baru";
+
+        $(document).ready(function(){
+            $("#tampil1").html("Teks yang Baru untuk Element ID");
+            $(".tampil1").html("Teks Pengganti Element Class");
+            $("h3").html("Belajar JQuery");
+            $("p").html("Isi dari Paragraf");
+            $("#tampil").html("Dalam paragraf akan dijelaskan mengenai JQuery");
+            $(".tampil").html("Dilanjut dengan praktek langsung");
+        });
+    </script>
+</body>
+</html>
